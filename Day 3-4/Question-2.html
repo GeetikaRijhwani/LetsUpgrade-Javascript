@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2</title>
+    <style>
+        .tb{margin: 10px; }
+        #btn{margin: 10px;}
+
+    </style>
+    <script>
+        function copy_text(){
+           let $val = document.getElementById("input1").value;
+           document.getElementById("input2").value = $val;
+
+        }
+    </script>
+</head>
+<body>
+    <Label>Enter any Value</Label><input type="text" name="text1" value="" id="input1" class="tb"><br>
+    <Label>Click button below to see output here</Label><input type="text" name="text2" value="" id="input2" class="tb" readonly><br>
+    <button id="btn" onclick="copy_text()">Copy Text</button>
+
+</body>
+</html>

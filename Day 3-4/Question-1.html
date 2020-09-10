@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg" width="200px" id="image" >
+    <button onclick="btn_1()">Button 1</button>
+    <button onclick="btn_2()">Button 2</button>
+    <button onclick="btn_3()">Button 3</button>
+
+    <script>
+         function btn_1()
+         {
+             document.getElementById("image").src = "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg";
+         }
+         function btn_2()
+         {
+             const img2 = "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
+             document.getElementById("image").src = img2;
+         }
+         function btn_3()
+         {
+             const img3 = "https://images.techhive.com/images/article/2016/08/habitable-planets-2-100679353-gallery.idge.jpg";
+             document.getElementById("image").src = img3;
+         }
+     </script> 
+</body>
+</html>

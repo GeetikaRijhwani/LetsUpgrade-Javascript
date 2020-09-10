@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 & 4</title>
+</head>
+<body>
+    <h2>Go to console after clicking Ctrl+Shift+I to see the output</h2>
+
+    <script>
+    let person = [
+        {
+        name: "Ram",
+        age: 25,
+        country: "India",
+        hobbies: ["Reading", "Travelling", "Listening Music"],
+        },
+
+        {
+        name: "John",
+        age: 27,
+        country: "USA",
+        hobbies: ["Reading", "Writing", "Singing"],
+        },
+
+        {
+        name: "Shyam",
+        age: 33,
+        country: "India",
+        hobbies: ["Writing", "Travelling", "Painting"],
+        },
+
+        ];
+    function show_person(){
+        for(let i=0; i<person.length; i++){
+          console.log(`Name: "${person[i].name}" Age: "${person[i].age}" Country: "${person[i].country}" `);
+          console.log("Hobbies " + person[i].hobbies);
+          console.log("  ");
+        }
+    }
+
+    function show_lessThan_30_person(){
+        for(let i=0; i<person.length; i++){
+            if(person[i].age<30)
+            {
+                console.log(`Name: "${person[i].name}" Age: "${person[i].age}" Country: "${person[i].country}" `);
+                console.log("Hobbies " + person[i].hobbies);
+                console.log("  ");
+            }
+        }
+    }
+
+    function show_Indian_person(){
+        for(let i=0; i<person.length; i++){
+            if(person[i].country == "India")
+            {
+                console.log(`Name: "${person[i].name}" Age: "${person[i].age}" Country: "${person[i].country}" `);
+                console.log("Hobbies " + person[i].hobbies);
+                console.log("  ");
+            }
+        }
+    }
+    console.log("**************Question 3********************");
+    console.log("  ");
+    console.log("Function displaying all the Objects");
+    console.log("  ");
+    show_person();
+
+    console.log("  ");
+    console.log("**************Question 4********************");
+    console.log("  ");
+    console.log("(A) Function displaying all the Objects having age less than 30");
+    console.log("  ");
+    show_lessThan_30_person();
+
+    console.log("  ");
+    console.log("(B) Function displaying all the Objects having country India");
+    console.log("  ");
+    show_Indian_person();
+
+    </script>
+    
+</body>
+</html>
