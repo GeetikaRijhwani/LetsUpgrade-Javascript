@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-2 Bus Management System</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h4{
+            margin-top: 20px;
+            font-size: 23px;
+            font-weight: 400;
+        }
+        .data{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 80%;
+            height: 500px;
+            margin-left: 10%;
+            margin-top: 100px;
+        }
+
+        .form {margin-top: 20px;}
+        .table{
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td{
+            height: 40px;
+            text-align: center;
+        }
+        input { width: 16%; height: 31px; text-indent: 10px;}
+        button {padding: 8px;}
+    </style>
+</head>
+<body>
+    <div class="data">
+        <h1>Bus Management System</h1>
+
+        <h4>Add Bus Details</h4>
+    
+        <div class="form" onsubmit="addBusData(event)">
+            <form>
+            <input type="text" placeholder="Bus Number" id="BusNo" required>
+            <input type="text" placeholder="Bus Name" id="BusName" required>
+            <input type="text" placeholder="Source Station" id="SrcStation" required>
+            <input type="text" placeholder="Destination Station" id="DesStation" required>
+            <input type="number" placeholder="Passenger Capacity" id="PassCap" required>
+            <button type="submit">Add Bus Details</button>
+            </form>
+        </div>
+        
+        <h4>Search For Buses</h4>
+        <div class="form">
+            <input type="text" placeholder="Search By Source Station" id="searchSrc" onkeyup="searchBySrcst()">
+            <input type="text" placeholder="Search By Destination Station" id="searchDes" onkeyup="searchByDesst()">
+        </div>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>Bus Number</th>
+                    <th>Bus Name</th>
+                    <th>Source Station</th>
+                    <th>Destination Station</th>
+                    <th>Passenger Capacity</th>
+                </tr>
+            </thead>
+            <tbody class="tdata" id="tdata"></tbody>
+        </table>
+    </div>    
+    <script src="BusProject.js"></script>
+</body>
+</html>
